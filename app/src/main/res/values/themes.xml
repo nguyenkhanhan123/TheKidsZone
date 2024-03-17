@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KidsZone" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/start_color</item>
+        <item name="colorPrimaryVariant">@color/start_color</item>
+        <item name="colorOnPrimary">@color/start_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/start_color</item>
+        <item name="colorSecondaryVariant">@color/start_color</item>
+        <item name="colorOnSecondary">@color/start_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/start_color</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="CustomDialogStyle" parent="@style/Theme.KidsZone">
+       <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.CrazyMath" parent="@style/Theme.KidsZone">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/crazy_math_color</item>
+        <item name="colorPrimaryVariant">@color/crazy_math_color</item>
+        <item name="colorOnPrimary">@color/crazy_math_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/crazy_math_color</item>
+        <item name="colorSecondaryVariant">@color/crazy_math_color</item>
+        <item name="colorOnSecondary">@color/crazy_math_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/crazy_math_color</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

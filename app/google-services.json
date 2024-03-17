@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "638847874777",
+    "project_id": "thekidszone",
+    "storage_bucket": "thekidszone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638847874777:android:7e0f0b9fa12f29c0c4f0c8",
+        "android_client_info": {
+          "package_name": "com.gh.mp3player.thekidszone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNFzP8sl5lSACBXDGqkYmsC5djOHQYy_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

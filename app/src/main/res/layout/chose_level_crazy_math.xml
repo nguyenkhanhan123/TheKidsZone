@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/crazy_math_color">
+    <FrameLayout
+        android:id="@+id/fr_main_crazymath"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:id="@+id/ln_chose_level"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="40dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CRAZY MATH GAME"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/rowdi_bold"
+            />
+    </FrameLayout>
+  <FrameLayout
+      android:id="@+id/level1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#A3404E"
+      android:layout_marginHorizontal="50dp"
+      android:padding="6dp"
+      android:layout_marginVertical="20dp"
+      >
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="MỨC ĐỘ THÔNG THƯỜNG"
+          android:textColor="@color/white"
+          android:textSize="30sp"
+          android:background="#ED474F"
+          android:fontFamily="@font/rowdi_bold"
+          />
+  </FrameLayout>
+    <TextView
+        android:id="@+id/best_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ĐIỂM CAO: 0"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/rowdi_bold"
+        tools:ignore="TextContrastCheck" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#758F44"
+        android:layout_marginHorizontal="50dp"
+        android:padding="6dp"
+        android:layout_marginVertical="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9ECB3E"
+            android:gravity="center"
+            android:text="MỨC ĐỘ NÂNG CAO"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:ignore="TextContrastCheck"
+            android:fontFamily="@font/rowdi_bold"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ĐIỂM CAO: 0"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:fontFamily="@font/rowdi_bold"
+        tools:ignore="TextContrastCheck"
+        android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+</FrameLayout>
