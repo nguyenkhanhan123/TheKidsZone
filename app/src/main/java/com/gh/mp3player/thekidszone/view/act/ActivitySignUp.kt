@@ -115,15 +115,13 @@ class ActivitySignUp : BaseActivity<ActivitySignupBinding>() {
             "Link" to "https://i.pinimg.com/564x/57/fb/31/57fb3190d0cc1726d782c4e25e8561e9.jpg",
         )
         val mFireStore = FirebaseFirestore.getInstance()
-        mFireStore.collection("USER").document(email).collection("Infor").add(user)
+        mFireStore.collection("USER").document(email).collection(email).document("Infor").collection("Infor").add(user)
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    val user = mAuth.currentUser
+                    val uSer = mAuth.currentUser
                     val intent = Intent(applicationContext, MainActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                     startActivity(intent)
-                } else {
-
                 }
             }
     }
