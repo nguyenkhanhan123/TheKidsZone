@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/start_color"
+    android:background="#B3E0FF"
     android:orientation="vertical">
 
     <TableRow
@@ -12,15 +12,25 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="5dp">
-
-        <ImageView
-            android:id="@+id/iv"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_group"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:layout_gravity="center"
-            android:layout_weight="1"
-            android:src="@drawable/ic_name"
-            tools:ignore="ContentDescription" />
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="20dp">
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_name"
+                tools:ignore="ContentDescription" />
+        </androidx.cardview.widget.CardView>
+
 
         <LinearLayout
             android:layout_width="0dp"
@@ -96,23 +106,28 @@
             android:layout_weight="1"
             android:src="@drawable/ic_find_group" />
     </TableRow>
-
-    <FrameLayout
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_rv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3">
-        <ScrollView
+        android:layout_weight="3"
+        >
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_group"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_group" />
-        </ScrollView>
-
-    </FrameLayout>
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_group" />
+            </ScrollView>
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </LinearLayout>
 
 

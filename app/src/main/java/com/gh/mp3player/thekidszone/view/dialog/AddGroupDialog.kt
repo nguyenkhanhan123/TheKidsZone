@@ -14,6 +14,7 @@ import kotlin.random.Random
 class AddGroupDialog(context: Context) : Dialog(context, R.style.CustomDialogStyle) {
     private val mbinding: AddGroupDialogBinding = AddGroupDialogBinding.inflate(layoutInflater)
     private var s: String = ""
+    lateinit var event: View.OnClickListener
 
     init {
         setContentView(mbinding.root)
@@ -21,6 +22,7 @@ class AddGroupDialog(context: Context) : Dialog(context, R.style.CustomDialogSty
     }
 
     private fun initView() {
+        mbinding.btOk.setOnClickListener { v->event.onClick(v);dismiss()}
     }
 
     fun setOK() {
@@ -86,6 +88,8 @@ class AddGroupDialog(context: Context) : Dialog(context, R.style.CustomDialogSty
 
             FirebaseFirestore.getInstance().collection("GROUP").document(code).collection(code)
                 .document("Leader").collection("Leader").add(user).addOnSuccessListener {
+                    CommonUtils.getInstance()
+                        .savePref(code,"")
                     Toast.makeText(context, "Tạo nhóm thành công", Toast.LENGTH_SHORT).show()
                 }
             val addUser = hashMapOf(
@@ -122,6 +126,8 @@ class AddGroupDialog(context: Context) : Dialog(context, R.style.CustomDialogSty
                                     } else {
                                         s = idGroup
                                         setOK()
+                                        CommonUtils.getInstance()
+                                            .savePref(idGroup,"")
                                     }
                                 }
 

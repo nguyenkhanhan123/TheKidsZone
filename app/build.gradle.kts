@@ -60,4 +60,6 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
     implementation("com.google.firebase:firebase-firestore")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+    implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+
 }

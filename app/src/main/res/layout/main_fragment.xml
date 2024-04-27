@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/bg_color">
+    android:background="#E1E1E1">
     <FrameLayout
         android:id="@+id/fr_main"
         android:layout_width="match_parent"

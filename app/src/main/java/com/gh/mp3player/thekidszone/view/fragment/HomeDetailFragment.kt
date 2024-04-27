@@ -53,14 +53,19 @@ class HomeDetailFragment : BaseFragment<FragmentHomeDetailBinding, CommonViewMod
             val dialog = AddGroupDialog(requireContext())
             dialog.setAdd()
             dialog.show()
+            dialog.setOnDismissListener { initListGroup() }
         }
         mbinding.findGroup.setOnClickListener {
             val dialog = AddGroupDialog(requireContext())
             dialog.setFind()
             dialog.show()
-            initListGroup()
+            dialog.setOnDismissListener { initListGroup() }
         }
-        initListGroup()
+
+        mbinding.refreshRv.setOnRefreshListener {
+            initListGroup()
+            mbinding.refreshRv.isRefreshing=false
+        }
     }
 
     private fun initListGroup() {
@@ -85,11 +90,10 @@ class HomeDetailFragment : BaseFragment<FragmentHomeDetailBinding, CommonViewMod
                                             val groupModel = GroupModel(name, code, host)
                                             list.add(groupModel)
                                         }
-                                        Toast.makeText(context,list.size.toString(),Toast.LENGTH_SHORT).show()
                                         mbinding.rvGroup.setAdapter(GroupAdapter(list,requireContext()) { v ->
                                             v.startAnimation(
                                                 AnimationUtils.loadAnimation(
-                                                    context,
+                                                    requireContext(),
                                                     R.anim.abc_fade_in
                                                 )
                                             )

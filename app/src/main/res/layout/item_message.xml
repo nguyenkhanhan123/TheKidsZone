@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginVertical="7dp"
+   >
+    <LinearLayout
+        android:id="@+id/myLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/myName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingEnd="15dp"
+            android:text="ID Nhóm: SQAJAL"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/item_group"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#7AC8FD"
+                app:cardCornerRadius="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="40dp">
+                <TextView
+                    android:id="@+id/myMes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="ID Nhóm: SQAJALddddddddddddd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="90dp">
+                <ImageView
+                    android:id="@+id/myLink"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_name"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+        </TableRow>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yourLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/yourName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="15dp"
+            android:text="ID Nhóm: SQAJAL"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="90dp">
+                <ImageView
+                    android:id="@+id/yourLink"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_name"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:cardBackgroundColor="#EAEAEA"
+                app:cardCornerRadius="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="40dp">
+                <TextView
+                    android:id="@+id/yourMes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="ID Nhóm: SQAJALdddd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,RtlSymmetry" />
+
+            </androidx.cardview.widget.CardView>
+
+        </TableRow>
+
+    </LinearLayout>
+
+
+</LinearLayout>

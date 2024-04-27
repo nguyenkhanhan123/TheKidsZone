@@ -7,4 +7,5 @@
         <item>Giáo viên</item>
         <item>Phụ Huynh</item>
     </string-array>
+    <string name="channel_description">This is a description of my channel.</string>
 </resources>
