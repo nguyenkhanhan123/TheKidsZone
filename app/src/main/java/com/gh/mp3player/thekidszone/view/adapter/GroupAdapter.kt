@@ -6,6 +6,7 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -42,7 +43,7 @@ class GroupAdapter(private var list: List<GroupModel>, private var context: Cont
         var tvNameGroup: TextView
         var tvIDGroup: TextView
         var tvLeader: TextView
-        var view:CardView
+        var view:LinearLayout
 
         init {
             tvNameGroup=itemView.findViewById(R.id.name_group)
