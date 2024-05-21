@@ -13,10 +13,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun initView() {
       CoroutineScope(Dispatchers.Main).launch {
           showFragment(SplashFragment.TAG, null, false, R.id.ln_main)
-          delay(3000)
+          delay(2000)
           showFragment(MainFragment.TAG, null, false, R.id.ln_main)
       }
-
     }
     override fun initViewBinding(): ActivityMainBinding {
         return ActivityMainBinding.inflate(layoutInflater)

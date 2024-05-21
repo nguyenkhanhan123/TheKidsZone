@@ -30,6 +30,8 @@
             />
         <activity android:name=".view.act.PlayCrazyMathAct"
             android:theme="@style/Theme.CrazyMath"/>
+        <activity android:name=".view.act.PlayCrazyMathAct2"
+            android:theme="@style/Theme.CrazyMath"/>
         <activity android:name=".view.act.ActivitySignIn"
             />
         <activity android:name=".view.act.ActivitySignUp"
@@ -38,6 +40,8 @@
         <service android:name=".view.service.MediaService"
             android:exported="false"
             />
+        <activity android:name=".view.act.ActivityChangePassword"/>
+
     </application>
 
 </manifest>

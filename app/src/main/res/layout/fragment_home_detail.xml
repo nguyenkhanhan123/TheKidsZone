@@ -14,8 +14,8 @@
         android:padding="5dp">
         <androidx.cardview.widget.CardView
             android:id="@+id/item_group"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_marginHorizontal="5dp"
             android:orientation="vertical"
@@ -33,41 +33,43 @@
 
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="2.5"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1.75"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:maxLines="2"
                 android:text="Nguyễn Khánh An"
                 android:textSize="26sp"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:id="@+id/tv_gmail"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center"
-                android:maxLines="2"
-                android:text="Gmail: nguyenkhanhan30072003@gmail.com"
-                android:textSize="15sp"
-                tools:ignore="HardcodedText" />
+                android:fontFamily="@font/sap_bold"
+                tools:ignore="HardcodedText"
+                android:textColor="#FFFFFF"
+                android:shadowColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:shadowRadius="20"/>
 
             <TextView
                 android:id="@+id/tv_sdt"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:maxLines="2"
+                android:fontFamily="@font/brock"
                 android:text="SĐT: 0919302516"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/tv_gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|center"
+                android:fontFamily="@font/brock"
+                android:text="Gmail:\nnguyenkhanhan30072003\n@gmail.com"
                 android:textSize="15sp"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
@@ -85,7 +87,7 @@
         android:layout_height="0dp"
         android:layout_gravity="end"
         android:layout_margin="5dp"
-        android:layout_weight="0.25"
+        android:layout_weight="0.22"
         android:padding="5dp">
 
         <View

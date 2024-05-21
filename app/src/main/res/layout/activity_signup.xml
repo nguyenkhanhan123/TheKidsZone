@@ -12,7 +12,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:padding="20dp"
-        >
+        tools:ignore="ScrollViewSize">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="150dp"
@@ -23,8 +23,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGN UP"
-        android:textColor="@color/black"
-        android:textSize="36sp"
+        android:textColor="#FFFFFF"
+        android:shadowColor="@color/black"
+        android:shadowRadius="20"
+        android:padding="@dimen/dp_10"
+        android:textSize="40sp"
+        android:fontFamily="@font/content_font"
         tools:ignore="HardcodedText" />
     <TableRow
         android:layout_width="match_parent"
@@ -53,7 +57,8 @@
             android:inputType="text"
             android:maxLength="50"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="26sp"
+            android:fontFamily="@font/comic"
             tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
     </TableRow>
         <TableRow
@@ -83,7 +88,8 @@
                 android:inputType="phone"
                 android:maxLength="100"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="26sp"
+                android:fontFamily="@font/comic"
                 tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
         </TableRow>
         <TableRow
@@ -138,7 +144,8 @@
             android:imeOptions="actionNext"
             android:inputType="textEmailAddress"
             android:maxLength="60"
-            android:textSize="20sp"
+            android:textSize="26sp"
+            android:fontFamily="@font/comic"
             android:textColor="@color/black"
             tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
     </TableRow>
@@ -170,7 +177,8 @@
             android:inputType="textPassword"
             android:maxLength="100"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="26sp"
+            android:fontFamily="@font/comic"
             tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
     </TableRow>
 
@@ -231,23 +239,56 @@
             android:inputType="textPassword"
             android:maxLength="100"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="26sp"
+            android:fontFamily="@font/comic"
             tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
     </TableRow>
+        <TableRow
+            android:id="@+id/tr_notify2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
 
-    <Button
-        android:id="@+id/bt_signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/bg_bt"
-        android:text="Sign up"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:padding="5dp"
-        android:layout_marginHorizontal="80dp"
-        tools:ignore="HardcodedText,VisualLintButtonSize" />
+            <ImageView
+                android:id="@+id/iv_notify2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/ic_warning"
+                tools:ignore="ContentDescription" />
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/tv_notify2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="7"
+                android:text="Mật khẩu nhắc lại phải giống mật khẩu đã nhập trước đó!"
+                android:paddingHorizontal="10dp"
+                android:textColor="#FFFF00"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/bt_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_bt"
+            android:padding="5dp"
+            android:text="Sign up"
+            android:textColor="#5D03FF"
+            android:textSize="24sp"
+            android:fontFamily="@font/sap_bold"
+            android:shadowColor="@color/white"
+            android:shadowRadius="100"
+            tools:ignore="HardcodedText,VisualLintButtonSize"
+            android:enabled="false"/>
+
+    </LinearLayout>
 
 </ScrollView>

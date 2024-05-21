@@ -37,9 +37,9 @@ class HomeDetailFragment : BaseFragment<FragmentHomeDetailBinding, CommonViewMod
                         val sdt = userData["Sdt"] as String
                         val job = userData["Job"] as String
                         val link = userData["Link"] as String
-
+                        val modifiedEmail = email.replace("@", "\n@")
                         mbinding.tvName.text = name
-                        mbinding.tvGmail.text = "Gmail: $eMail"
+                        mbinding.tvGmail.text = "Gmail:\n$modifiedEmail"
                         mbinding.tvSdt.text = "SĐT: $sdt"
                         if (job == "Phụ Huynh") {
                             mbinding.addGroup.visibility = View.INVISIBLE

@@ -64,6 +64,7 @@
         android:fontFamily="@font/rowdi_bold"
         tools:ignore="TextContrastCheck" />
     <FrameLayout
+        android:id="@+id/level2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#758F44"
@@ -84,6 +85,7 @@
             android:fontFamily="@font/rowdi_bold"/>
     </FrameLayout>
     <TextView
+        android:id="@+id/best_hard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"

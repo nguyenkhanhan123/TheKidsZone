@@ -18,12 +18,12 @@ class ReadyDialog(context: Context) : Dialog(context, R.style.CustomDialogStyle)
     }
 
     private fun initView() {
-mbinding.tvOk.setOnClickListener { v->event.onClick(v);dismiss()}
+        mbinding.tvOk.setOnClickListener { v -> event.onClick(v);dismiss() }
     }
 
     fun setLose() {
-        mbinding.tvText.text="OH NO, YOU LOSE!"
-        mbinding.tvOk.text="PLAY AGAIN"
+        mbinding.tvText.text = "OH NO, YOU LOSE!"
+        mbinding.tvOk.text = "PLAY AGAIN"
     }
 
 }

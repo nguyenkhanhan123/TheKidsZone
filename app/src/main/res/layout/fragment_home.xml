@@ -22,8 +22,10 @@
         android:layout_height="wrap_content"
         android:text="Bạn chưa đăng nhập vào ứng dụng!"
         android:textColor="@color/black"
+        android:fontFamily="@font/brock"
         android:textSize="28sp"
-        android:gravity="center"/>
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/bt_signin"
@@ -32,10 +34,14 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/bg_bt"
         android:text="Đăng nhập ngay Tại Đây!"
-        android:textColor="@color/white"
+        android:textColor="#5B00FF"
         android:textSize="20sp"
+        android:fontFamily="@font/sap_bold"
+        android:shadowColor="@color/white"
+        android:shadowRadius="100"
         android:padding="5dp"
-        android:layout_marginHorizontal="30dp"/>
+        android:layout_marginHorizontal="30dp"
+        tools:ignore="HardcodedText" />
 
     <LinearLayout
         android:id="@+id/ln_sign_up"
@@ -51,7 +57,9 @@
             android:layout_height="wrap_content"
             android:text="Bạn chưa có tài khoản?"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:fontFamily="@font/brock"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -59,8 +67,9 @@
             android:layout_marginStart="5dp"
             android:text="Đăng ký tài khoản mới"
             android:textColor="#8627FB"
-            android:textSize="16sp"
-            />
+            android:fontFamily="@font/brock"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"

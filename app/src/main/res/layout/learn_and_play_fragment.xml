@@ -10,12 +10,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Learn and Play"
+    android:fontFamily="@font/content_font"
     android:background="#7AC9FE"
-    android:textColor="@color/black"
-    android:textSize="30sp"
+    android:textColor="#FFFFFF"
+    android:textSize="28sp"
+    android:shadowColor="@color/black"
+    android:shadowRadius="20"
     android:gravity="center"
     android:paddingBottom="5dp"
-    />
+    tools:ignore="HardcodedText" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/vp_activities"

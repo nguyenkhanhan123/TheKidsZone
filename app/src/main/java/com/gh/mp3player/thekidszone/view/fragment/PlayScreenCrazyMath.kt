@@ -10,7 +10,7 @@ import com.gh.mp3player.thekidszone.view.dialog.ReadyDialog
 import com.gh.mp3player.thekidszone.viewmodel.PlayScreenModel
 
 
-class PlayScreen_CrazyMath : BaseFragment<PlayScreenCrazyMathBinding, PlayScreenModel>() {
+class PlayScreenCrazyMath : BaseFragment<PlayScreenCrazyMathBinding, PlayScreenModel>() {
 
     override fun getClassVM(): Class<PlayScreenModel> {
         return PlayScreenModel::class.java
@@ -83,7 +83,7 @@ class PlayScreen_CrazyMath : BaseFragment<PlayScreenCrazyMathBinding, PlayScreen
     }
 
     companion object {
-        val TAG: String = PlayScreen_CrazyMath::class.java.name
+        val TAG: String = PlayScreenCrazyMath::class.java.name
     }
 
 }

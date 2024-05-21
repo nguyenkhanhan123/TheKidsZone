@@ -1,6 +1,6 @@
 package com.gh.mp3player.thekidszone.view.act
 
-import com.gh.mp3player.thekidszone.view.fragment.ChoseLevel_CrazyMath
+import com.gh.mp3player.thekidszone.view.fragment.ChoseLevelCrazyMath
 import com.gh.mp3player.thekidszone.view.fragment.SplashFragmentCrazyMath
 import com.gh.mp3player.thekidszone.R
 import com.gh.mp3player.thekidszone.databinding.ActivityCrazyMathBinding
@@ -15,7 +15,7 @@ class ActivityCrazyMath : BaseActivity<ActivityCrazyMathBinding>() {
         CoroutineScope(Dispatchers.Main).launch {
             showFragment(SplashFragmentCrazyMath.TAG, null, false, R.id.ln_crazymath)
             delay(3000)
-            showFragment(ChoseLevel_CrazyMath.TAG, null, false, R.id.ln_crazymath)
+            showFragment(ChoseLevelCrazyMath.TAG, null, false, R.id.ln_crazymath)
         }
     }
 

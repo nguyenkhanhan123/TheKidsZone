@@ -38,9 +38,9 @@ class ActivityMessage : BaseActivity<MessageLayoutBinding>() {
         mbinding.ivBack.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
-        var name: String = ""
-        var link: String = ""
-        var eMail: String = ""
+        var name = ""
+        var link = ""
+        var eMail = ""
         val email = FirebaseAuth.getInstance().currentUser?.email
         if (email != null) {
             FirebaseFirestore.getInstance().collection("USER").document(email).collection(email)
